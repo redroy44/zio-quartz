@@ -1,18 +1,26 @@
 import Dependencies._
+import xerial.sbt.Sonatype._
 
-ThisBuild / organization := "io.github.redroy44"
-ThisBuild / version := "0.0.1"
 ThisBuild / scalaVersion := "2.13.6"
-ThisBuild / homepage := Some(url("https://redroy44.github.io/zio-quartz"))
-ThisBuild / description := "Some description of the project"
-ThisBuild / licenses += ("Apache-2.0", url("http://www.apache.org/licenses/LICENSE-2.0"))
-ThisBuild / developers := List(
-  Developer(
-    "redroy44",
-    "Piotr Bandurski",
-    "redroy44@gmail.com",
-    url("https://github.com/redroy44")
-  )
+
+val publishSettings = List(
+  organization := "io.github.redroy44",
+  homepage := Some(url("https://redroy44.github.io/zio-quartz")),
+  description := "Some description of the project",
+  licenses += ("Apache-2.0", url("http://www.apache.org/licenses/LICENSE-2.0")),
+  developers := List(
+    Developer(
+      "redroy44",
+      "Piotr Bandurski",
+      "redroy44@gmail.com",
+      url("https://github.com/redroy44")
+    )
+  ),
+  pomIncludeRepository := { _ => false },
+  sonatypeRepository := "https://s01.oss.sonatype.org/service/local",
+  sonatypeProfileName := "io.github.redroy44",
+  dynverSonatypeSnapshots := true,
+  sonatypeCredentialHost := "s01.oss.sonatype.org"
 )
 
 addCommandAlias("fmt", "all scalafmtSbt scalafmt test:scalafmt")
@@ -34,6 +42,7 @@ lazy val root = project
   )
 
 lazy val zioQuartz = (project in file("zio-quartz-core"))
+  .settings(publishSettings)
   .settings(
     name := "zio-quartz",
     semanticdbEnabled := true,
@@ -79,12 +88,14 @@ lazy val zioQuartz = (project in file("zio-quartz-core"))
 
 lazy val examples = Project("examples", file("examples"))
   .settings(
-    publishArtifact := false,
-    publish / skip := true
+    publishArtifact := false
   )
   .aggregate(simple)
 
 lazy val simple = Project("simple", file("examples") / "simple")
+  .settings(
+    publishArtifact := false
+  )
   .disablePlugins(ScalafixPlugin)
   .dependsOn(
     zioQuartz
