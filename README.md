@@ -19,7 +19,7 @@ Check `examples` for setting up a simple Quartz based job schedule.
 [Badge-SonatypeReleases]: https://img.shields.io/nexus/r/https/s01.oss.sonatype.org/io.github.redroy44/zio-quartz_2.13.svg "Sonatype Releases"
 [Badge-SonatypeSnapshots]: https://img.shields.io/nexus/s/https/s01.oss.sonatype.org/io.github.redroy44/zio-quartz_2.13.svg "Sonatype Snapshots"
 [Badge-Discord]: https://img.shields.io/discord/2ccFBr4?logo=discord "chat on discord"
-[Link-SonatypeReleases]: https://oss.sonatype.org/content/repositories/releases/io/github/redroy44/zio-quartz_2.13/ "Sonatype Releases"
+[Link-SonatypeReleases]: https://s01.oss.sonatype.org/content/repositories/releases/io/github/redroy44/zio-quartz_2.13/ "Sonatype Releases"
 [Link-SonatypeSnapshots]: https://s01.oss.sonatype.org/content/repositories/snapshots/io/github/redroy44/zio-quartz_2.13/ "Sonatype Snapshots"
 [Link-Discord]: https://discord.com/invite/2ccFBr4 "Discord"
 [Badge-CI]: https://github.com/redroy44/zio-quartz/workflows/CI/badge.svg
