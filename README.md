@@ -6,29 +6,21 @@
 
 # Summary
 
-Some description of the project
+ZIO based wrapper for Quartz Scheduler. Inspired by [akka-quartz-scheduler](https://github.com/enragedginger/akka-quartz-scheduler).
 
-# Documentation
+# Examples
 
-[zio-quartz Microsite](https://redroy44.github.io/zio-quartz/)
-
-## Code of Conduct
-
-See the [Code of Conduct](https://redroy44.github.io/zio-quartz/docs/about/about_coc)
-
-## Support
-
-Come chat with us on [![Badge-Discord]][Link-Discord].
+Check `examples` for setting up a simple Quartz based job schedule.
 
 # License
 
 [License](LICENSE)
 
-[Badge-SonatypeReleases]: https://img.shields.io/nexus/r/https/oss.sonatype.org/dev.zio/zio-quartz_2.13.6.svg "Sonatype Releases"
-[Badge-SonatypeSnapshots]: https://img.shields.io/nexus/s/https/oss.sonatype.org/dev.zio/zio-quartz_2.13.6.svg "Sonatype Snapshots"
+[Badge-SonatypeReleases]: https://img.shields.io/nexus/r/https/s01.oss.sonatype.org/io.github.redroy44/zio-quartz_2.13.svg "Sonatype Releases"
+[Badge-SonatypeSnapshots]: https://img.shields.io/nexus/s/https/s01.oss.sonatype.org/io.github.redroy44/zio-quartz_2.13.svg "Sonatype Snapshots"
 [Badge-Discord]: https://img.shields.io/discord/2ccFBr4?logo=discord "chat on discord"
-[Link-SonatypeReleases]: https://oss.sonatype.org/content/repositories/releases/dev/zio/zio-quartz_2.13.6/ "Sonatype Releases"
-[Link-SonatypeSnapshots]: https://oss.sonatype.org/content/repositories/snapshots/dev/zio/zio-quartz_2.13.6/ "Sonatype Snapshots"
+[Link-SonatypeReleases]: https://oss.sonatype.org/content/repositories/releases/io/github/redroy44/zio-quartz_2.13/ "Sonatype Releases"
+[Link-SonatypeSnapshots]: https://s01.oss.sonatype.org/content/repositories/snapshots/io/github/redroy44/zio-quartz_2.13/ "Sonatype Snapshots"
 [Link-Discord]: https://discord.com/invite/2ccFBr4 "Discord"
 [Badge-CI]: https://github.com/redroy44/zio-quartz/workflows/CI/badge.svg
 
